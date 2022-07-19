@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal"
+            android:padding="5sp">
+
+            <Button
+                android:id="@+id/sanalPosWeb"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5sp"
+                android:text="SANAL POS" />
+
+            <Button
+                android:id="@+id/QRWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:text="QR" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_weight="0"
+            android:padding="25sp"
+            app:srcCompat="@drawable/sunan_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            android:paddingLeft="75sp"
+            android:paddingRight="75sp">
+
+            <EditText
+                android:id="@+id/musteriIdSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:hint="Müşteri No"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:orientation="horizontal"
+            android:paddingLeft="100sp"
+            android:paddingRight="100sp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="ARA" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Müşteri Bilgi Sistemi"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</ScrollView>
